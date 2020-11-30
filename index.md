@@ -15,7 +15,7 @@
         <div id="head">
             <a href="Mandalorian.html " target="_blank">Mandalorian</a>
             |
-            <a href="StarWars.html">Star Wars</a>
+            <a href="index.md">Star Wars</a>
         </div>
         <div>
             <div>
