@@ -5,30 +5,27 @@ body{
     color: white;
 }
 .container{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, 1fr);
     height:100%;
     width:100%;
     overflow:hidden;
+    flex-wrap: wrap; 
 }
 #header{
     font-size: 10rem;
     margin: 0;
     background-color: violet;
-    background-image: url("../imgs/mandalorian/mando.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/mandalorian/mando.jpg');
     background-size: cover;
-    background-position: 20% 20%;
+    background-position: 20% 10%;
     width: 100%;
     text-align: center;
     color: white;
     text-shadow: 10px 10px 5px black;
     height: 300px;
 }
-h1:nth-child(1){
-    grid-column: span 5;
-}
 #head{
-    grid-column: span 5;
     width: 100;
     background-color: rgb(27, 38, 48);
     line-height: 70px;
@@ -37,6 +34,7 @@ h1:nth-child(1){
     padding-right: 5%;
     position: sticky;
     color: white;
+    flex-basis: 100%;
 }
 #head a{
     padding-right: 10px;
@@ -46,31 +44,41 @@ h1:nth-child(1){
 #head a:hover{
     padding-right: 10px;
     text-decoration: none;
-    color: darkorange;
+    color: rgb(65, 95, 124)
 }
 div:nth-child(3){
-    grid-column: span 4;
-    padding-left: 20%;
+    flex-basis: 65%;
     line-height: 25px;
+    padding-left: 15%;;
 }
-img:nth-child(2){
+img{
     width: 40%;
-    float: left;
-    border: 5px solid white;
+    border: 5px solid rgb(27, 38, 48);
     border-radius: 25px;
     margin-right: 20px;
     margin-bottom: 25px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;}
+
+#firstPic{float: left;}
+#secondPic{float: right;}
+#thirdPic{float: left;}
+#forrasPC{
+    flex-basis: 20%;
 }
 #forrasMob{
     display: none;
+}
+table{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 @media screen and (max-width: 1185px){
     #header{
         font-size: 8rem;
         margin: 0;
         background-color: violet;
-        background-image: url("../imgs/starwars/hansolo.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/mandalorian/mando.jpg');
         background-size: cover;
         background-position: 20% 10%;
         width: 100%;
@@ -79,22 +87,19 @@ img:nth-child(2){
         text-shadow: 5px 5px 5px black;
         height: 200px;
     }
-    img:nth-child(2){
+    img{
         width: 60%;
-        float: left;
-        border: 5px solid white;
         border-radius: 25px;
         margin-right: 20px;
         margin-bottom: 25px;
-        box-shadow: 7px 7px 25px black;
     }
 }
 @media screen and (max-width: 768px) {
     #header{
-        font-size: 5rem;
+        font-size: 4rem;
         margin: 0;
         background-color: violet;
-        background-image: url("../imgs/mandalorian/mando.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/mandalorian/mando.jpg');
         background-size: cover;
         background-position: 20% 10%;
         width: 100%;
@@ -104,18 +109,14 @@ img:nth-child(2){
         height: 100px;
     }
     div:nth-child(3){
-        grid-column: span 4;
+        flex-basis: 100%;
         padding-left: 5%;
         padding-right: 2%;
     }
-    img:nth-child(2){
+    img{
         width: 100%;
-        float: left;
-        border: 5px solid white;
-        border-radius: 25px;
-        margin-right: 20px;
-        margin-bottom: 25px;
-        box-shadow: 7px 7px 25px black;
+        margin-left: auto;
+        margin-right: auto;
     }
     #forrasPC{
         display: none;
@@ -126,27 +127,35 @@ img:nth-child(2){
         padding-right: 10%;
     }
     #forrasMob, #forrasMob > ul{
-        grid-column: span 5;
+       flex-basis: 100%;
         text-align: center;
         list-style: none;
         display: block;
     }
-}
-h2{
-    clear: both;
+    table{
+        display: none;
+    }
 }
 #footer{
-    grid-column: span 5;
     width: 100%;
     text-align: center;
     line-height: 70px;
     color: white;
-    background-color: rgb(27, 38, 48);
+    background-color:  rgb(27, 38, 48);
 }
-li a{
-    color: white;
+li a, li h3{
     text-decoration: none;
+    color: white;
+    padding-right: 10%;
 }
 li a:hover{
-    color: chocolate;
+    color: rgb(65, 95, 124)
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th{
+    background-color: peru;
+    color: white;
 }
