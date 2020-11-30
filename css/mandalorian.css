@@ -172,7 +172,6 @@ li a, li h3{
     text-decoration: none;
     color: white;
     padding-right: 10%;
-    padding-left: 10%;
 }
 li a:hover{
     color: rgb(65, 95, 124)
