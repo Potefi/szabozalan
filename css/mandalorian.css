@@ -92,6 +92,11 @@ table{
         margin-bottom: 25px;
     }
 }
+@media screen and (max-width: 837px){
+    #header{
+        font-size: 7rem;
+    }
+}
 @media screen and (max-width: 768px) {
     #header{
         font-size: 4rem;
@@ -131,6 +136,16 @@ table{
     }
     table{
         display: none;
+    }
+}
+@media screen and (max-width: 440px){
+    #header{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 390px){
+    #header{
+        font-size: 3rem;
     }
 }
 #footer{

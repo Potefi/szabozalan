@@ -134,6 +134,16 @@ table{
         display: none;
     }
 }
+@media screen and (max-width: 415px){
+    #header{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 333px){
+    #header{
+        font-size: 3.5rem;
+    }
+}
 #footer{
     grid-column: span 5;
     width: 100%;
