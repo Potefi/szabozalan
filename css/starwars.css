@@ -1,7 +1,8 @@
 body{
     margin:0; padding:0;
     font-family: 'Montserrat', sans-serif;
-    background-color: cornsilk;
+    background-color: rgb(9, 14, 18);
+    color: white;
 }
 .container{
     display: grid;
@@ -13,8 +14,7 @@ body{
 #header{
     font-size: 10rem;
     margin: 0;
-    background-color: violet;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/starwars/hansolo.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/starwars/mill.jpg');
     background-size: cover;
     background-position: 20% 10%;
     width: 100%;
@@ -29,7 +29,7 @@ h1:nth-child(1){
 #head{
     grid-column: span 5;
     width: 100;
-    background-color: peru;
+    background-color: rgb(27, 38, 48);
     line-height: 70px;
     font-size: 1.7rem;
     text-align: right;
@@ -46,7 +46,7 @@ h1:nth-child(1){
 #head a:hover{
     padding-right: 10px;
     text-decoration: none;
-    color: darkorange;
+    color: rgb(65, 95, 124)
 }
 div:nth-child(3){
     grid-column: span 4;
@@ -77,8 +77,6 @@ table{
     #header{
         font-size: 8rem;
         margin: 0;
-        background-color: violet;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/starwars/hansolo.jpg');
         background-size: cover;
         background-position: 20% 10%;
         width: 100%;
@@ -100,8 +98,6 @@ table{
     #header{
         font-size: 5rem;
         margin: 0;
-        background-color: violet;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/starwars/hansolo.jpg');
         background-size: cover;
         background-position: 20% 10%;
         width: 100%;
@@ -144,21 +140,30 @@ table{
     text-align: center;
     line-height: 70px;
     color: white;
-    background-color: peru;
+    background-color: rgb(27, 38, 48);
 }
 li a, li h3{
     text-decoration: none;
-    color: black;
+    color: white;
     padding-right: 10%;
 }
 li a:hover{
-    color: chocolate;
+    color: rgb(65, 95, 124);
+}
+th{
+    text-align: left;
 }
 table, th, td{
     border: 2px solid black;
     border-collapse: collapse;
 }
+td:nth-child(1){
+    background-color: rgb(27, 38, 48);
+}
+tr:nth-child(3){
+    background-color: rgb(22, 29, 36);
+}
 th{
-    background-color: peru;
+    background-color: rgb(27, 38, 48);
     color: white;
 }

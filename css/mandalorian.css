@@ -15,7 +15,6 @@ body{
 #header{
     font-size: 10rem;
     margin: 0;
-    background-color: violet;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/mandalorian/mando.jpg');
     background-size: cover;
     background-position: 20% 10%;
@@ -77,7 +76,6 @@ table{
     #header{
         font-size: 8rem;
         margin: 0;
-        background-color: violet;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/mandalorian/mando.jpg');
         background-size: cover;
         background-position: 20% 10%;
@@ -98,7 +96,6 @@ table{
     #header{
         font-size: 4rem;
         margin: 0;
-        background-color: violet;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imgs/mandalorian/mando.jpg');
         background-size: cover;
         background-position: 20% 10%;
